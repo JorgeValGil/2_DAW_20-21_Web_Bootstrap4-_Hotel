@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!--icono da páxina-->
+    <link rel="icon" type="image/png" href="images/hotel/hotel_icon.png">
+    <!--arquivos css-->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--título da páxina-->
+    <title>HOTEL MARAVILLA</title>
+</head>
+<!--body-->
+
+<body>
+    <!--contedor do menu superior e do navbar-->
+    <div class="container fondo-claro">
+        <!--menu superior-->
+        <div class="row">
+            <div class="col">
+                <div class="rowtop d-flex justify-content-end">
+                    <!--telefono-->
+                    <div><a href="#"><img class="icon_navbar" src="images/icons/telephone-fill.svg" alt="icono telefono"></a>
+                        <span>+34986000123</span><a href="#">
+                    </div>
+                    <!--idioma-->
+                    <div>
+                        <span>
+                            <div class="dropdown show">
+                                <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Idioma
+                                </a>
+
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="#"><img src="images/icons/flag/spain16.png"
+                                        alt="icono bandera españa"><img src="images/icons/flag/mexico16.png" alt="icono bandera mexico"><img
+                                            src="images/icons/flag/argentina16.png" alt="icono bandera argentina"> Español</a>
+                                    <a class="dropdown-item" href="#"><img src="images/icons/flag/usa16.png" alt="icono bandera estados unidos"><img
+                                            src="images/icons/flag/uk16.png" alt="icono bandera reino unido"><img
+                                            src="images/icons/flag/australia16.png" alt="icono bandera australia"> English</a>
+                                </div>
+                            </div>
+                        </span>
+                    </div>
+                    <!--rrss-->
+                    <div>
+                        <a href="#"><img class="icon_navbar"
+                                src="images/icons/whatsapp.svg" alt="icono whatsapp"></a>
+                        <a href="#"><img class="icon_navbar"
+                                src="images/icons/facebook.svg" alt="icono facebook"></a>
+                        <a href="#"><img class="icon_navbar"
+                                src="images/icons/twitter.svg" alt="icono twitter"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--navbar-->
+        <div class="row">
+            <!--logo da páxina-->
+            <div class="logo col-12 col-sm-3 col-md-2">
+                <img src="images/hotel/hotel.png" alt="logo da páxina">
+            </div>
+            <!--nav-->
+            <div class="col-12 col-sm-4 col-md-9 nav justify-content-end">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto nav-justified">
+                            <ul class="navbar-nav mr-auto nav-justified">
+                                <li class="nav-item">
+                                    <a class="nav-link text-wrap" href="index.html" role="button" aria-haspopup="true"
+                                        aria-expanded="false"><img class="icon_navbar"
+                                            src="images/icons/house-fill.svg" alt="icono casa">
+                                        INICIO
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-wrap" href="#" role="button"
+                                        aria-haspopup="true" aria-expanded="false"><img class="icon_navbar"
+                                            src="images/icons/door-open.svg" alt="icono porta">
+                                        HABITACIONES
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-wrap" href="#" role="button" aria-haspopup="true"
+                                        aria-expanded="false"><img class="icon_navbar" src="images/icons/images.svg" alt="icono galería de imáxenes">
+                                        GALERÍA
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-wrap" href="#" role="button" aria-haspopup="true"
+                                        aria-expanded="false"><img class="icon_navbar"
+                                            src="images/icons/chat-left-dots.svg" alt="icono contacto">
+                                        CONTACTO
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-wrap" href="#" role="button" aria-haspopup="true"
+                                        aria-expanded="false"><img class="icon_navbar" src="images/icons/globe.svg" alt="icono globo terráqueo, icono ubicación">
+                                        UBICACIÓN
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-wrap" href="#" role="button" aria-haspopup="true"
+                                        aria-expanded="false"><img class="icon_navbar"
+                                            src="images/icons/person-square.svg" alt="icono usuario">
+                                        REGISTRO Y CUENTA
+                                    </a>
+                                </li>
+                            </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!--zona central-->
+    <div class="container mb-3 fondo-claro">
+        <div class="row fondo-claro">
+            <div class="col-12 pb-4">
+                <!--carrusel-->
+                <div id="carrusel-proba" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carrusel-proba" data-slide-to="0" class="active"></li>
+                        <li data-target="#carrusel-proba" data-slide-to="1"></li>
+                        <li data-target="#carrusel-proba" data-slide-to="2"></li>
+                        <li data-target="#carrusel-proba" data-slide-to="3"></li>
+                        <li data-target="#carrusel-proba" data-slide-to="4"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="images/carrusel/BARANDILLA.jpg" alt="Vistas dende balcón hotel">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="images/carrusel/CRISTALERA.jpg" alt="Vistas dende jacuzzi hotel">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="images/carrusel/LAGO.jpg" alt="Vista aérea 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="images/carrusel/LAGO2.jpg" alt="Vista aérea 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="images/carrusel/PAISAJE.jpg" alt="Vista aérea hotel">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carrusel-proba" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carrusel-proba" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Seguinte</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--titulo nuestras habitaciones-->
+        <div class="row">
+            <div class="col">
+                <h3 class="display-5 bg-secondary text-white mb-1 mt-2 text-center">Nuestras habitaciones</h3>
+            </div>
+        </div>
+        <!--cards de habitacions-->
+        <div class="row justify-content-center">
+            <div class="col-md-4 col-sm-6">
+                <div class="card mb-1 mt-1 border-dark">
+                    <img class="card-img-top" src="images/habitaciones/individual.jpg" alt="Habitación Individual">
+                    <div class="card-body">
+                        <a href="#" class="enlace">
+                            <h5 class="card-title text-center">Habitación Individual</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card mb-1 mt-1 border-dark">
+                    <img class="card-img-top" src="images/habitaciones/doble.jpg" alt="Habitación Doble">
+                    <div class="card-body">
+                        <a href="#" class="enlace">
+                            <h5 class="card-title text-center">Habitación Doble</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card mb-1 mt-1 border-dark">
+                    <img class="card-img-top" src="images/habitaciones/triple.jpg" alt="Habitación Triple">
+                    <div class="card-body">
+                        <a href="#" class="enlace">
+                            <h5 class="card-title text-center">Habitación Triple</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card mb-1 mt-1 border-dark">
+                    <img class="card-img-top" src="images/habitaciones/cudadruple.jpg" alt="Habitación Cuádruple">
+                    <div class="card-body">
+                        <a href="#" class="enlace">
+                            <h5 class="card-title text-center">Habitación Cuádruple</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card mb-1 mt-1 border-dark">
+                    <img class="card-img-top" src="images/habitaciones/famliar_cinco_personas.jpg"
+                        alt="Habitación Familiar">
+                    <div class="card-body">
+                        <a href="#" class="enlace">
+                            <h5 class="card-title text-center">Habitación Familiar</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card mb-1 mt-1 border-dark">
+                    <img class="card-img-top" src="images/habitaciones/suite.jpg" alt="Suite">
+                    <div class="card-body">
+                        <a href="#" class="enlace">
+                            <h5 class="card-title text-center">Suite</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--zona sobre nosotros-->
+        <div class="row">
+            <div class="col">
+                <h3 class="display-5 bg-secondary text-white mb-1 mt-2 text-center">Sobre Nosotros</h3>
+                <p class="sobre_nosotros">El <span>Hotel Maravilla</span> ocupa un antiguo edificio construido para ser
+                    utilizado como cárcel, en la isla
+                    Monteagudo: la estructura interna de este exclusivo hotel es sumamente
+                    acogedora y funcional, para garantizar a los huéspedes una estancia caracterizada por el confort y
+                    el relax.<br>
+                    <br>La decoración en estilo moderno y la calidez de la atención contribuyen a una experiencia única
+                    e inigualable en el mundo.<br>
+                    <br>El <span>Hotel Maravilla</span> se complacerá en indicarle los lugares de visita más
+                    interesantes, incluso fuera
+                    de los circuitos turísticos tradicionales, para que conozca hasta los tesoros más ocultos de la
+                    ciudad. Dos ejemplos son la playa de Samil y el característico Monte de O Castro.
+                    En cuanto a los placeres del paladar, Vigo ofrece la posibilidad de degustar muchísimas
+                    especialidades. Y para saborear la cocina gallega, nada mejor que recibir los consejos de los
+                    gallegos mismos: el <span>Hotel Maravilla</span> sugerirá itinerarios enogastronómicos en los
+                    mesones y
+                    restaurantes más característicos y de mejor calidad.
+                </p>
+            </div>
+        </div>
+        <!--footer-->
+        <div class="footer">
+            <!--datos hotel-->
+            <div class="datos">
+                <!--logo-->
+                <div class="logo_footer"><img src="images/hotel/hotel.png" alt="logo da páxina"></div>
+                <!--direccion-->
+                <div>
+                    <a href="#"><img class="icon_navbar" src="images/icons/geo-alt-fill.svg" alt="icono marca ubicación"></a>
+                    <span>Avda. de Galicia, 101, 36216 Vigo, Pontevedra</span>
+                </div>
+                <!--telefono-->
+                <div>
+                    <a href="#"><img class="icon_navbar" src="images/icons/telephone-fill.svg" alt="icono telefono"></a>
+                    <span>+34986000123</span>
+                </div>
+                <!--email-->
+                <div>
+                    <a href="#"><img class="icon_navbar" src="images/icons/envelope-fill.svg" alt="icono sobre de mensaxe"></a>
+                    <span>reservas@hotelmaravilla.com</span>
+                </div>
+            </div>
+            <!--nota legal-->
+            <div class="nota_legal">
+                <p>Hotel Maravilla © 2021<br>Nota Legal</p>
+            </div>
+        </div>
+    </div>
+<!--arquivos js-->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--script para función popover-->
+    <script>
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        })
+    </script>
+    <!--script para función tooltip-->
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+</body>
+
+</html>
